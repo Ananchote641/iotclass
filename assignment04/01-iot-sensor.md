@@ -31,6 +31,22 @@ https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32
 4. ติดตั้งไดรเวอร์ FTDI แล้วเสียบบอร์ด Cucumber RS กับคอมพิวเตอร์
 
 
+
+## Send data to kafka
+1. include library สำหรับเชื่อมต่อกับ MQTT broker และ ส่งข้อมูลเซ็นเซอร์ในรูปแบบ JSON (PubSubClient.h, ArduinoJson.h, WiFi.h)
+2. เชื่อมต่อกับ WiFi ของเราโดยสร้าง function setupWifi()
+3. เชื่อมต่อกับ MQTT broker โดยผ่าน function reconnect()
+4. สร้าง JSON จากข้อมูลเซ็นเซอร์ HTS221, BMP280, MPU6050,SensirionI2cSht4x 
+5. ส่ง JSON ไปยัง topic "iot-frames"
+
+
+
+## flow chart
+
+[iot.drawio.pdf](https://github.com/user-attachments/files/16960971/iot.drawio.pdf)
+
+
+
 ## ESP32
 
 ```cpp

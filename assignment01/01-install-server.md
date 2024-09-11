@@ -2,7 +2,34 @@
 
 
 ## How to install Server
+Step 1: Download Ubuntu Server ISO
+You can download the Ubuntu Server ISO file from the official site of Ubuntu.
 
+Step 2: Create a Bootable USB Drive
+To create a bootable USB drive, use Etcher. First, install Etcher on Windows or MacOS.
+
+Step 3: Boot the System From USB
+
+Step 4: Language and Keyboard Configuration
+
+Step 5: Choose Keyboard Layout
+Select your preferred keyboard layout and variant using the UP and DOWN keys. Select “Done” and press ENTER.
+
+Step 6: Choose the Installation Type
+Choose Ubuntu Server as a base for the installation. Then, select “Done” and press ENTER.
+
+Step 7: Network Configuration
+
+Step 8: Configure the Storage
+Opt for “Use an entire disk” to let the installer automatically create partitions on the entire disk.
+
+Step 9: Configure Profile settings
+
+Step 10: SSH Setup
+Select “Install OpenSSH Server”. Then choose “Done” and hit ENTER.
+
+Step 11: Finish Installation
+When the installation is completed select “Reboot Now” and press ENTER.
 
 
 

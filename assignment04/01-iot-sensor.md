@@ -43,7 +43,8 @@ https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32
 
 ## flow chart
 
-[iot.drawio.pdf](https://github.com/user-attachments/files/16960971/iot.drawio.pdf)
+![iot](https://github.com/user-attachments/assets/fe68f4ad-bd7d-44ec-8e4d-92e78007baa3)
+
 
 
 

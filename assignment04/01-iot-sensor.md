@@ -47,6 +47,22 @@ https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32
 3. SensirionI2cSht4x  : วัดอุณหภูมิและความชื้น
 4. LDR (ขา Pin 5) : วัดระดับแสง
 
+## แสดงเวลา 
+จะใช้ NTP (Network Time Protocol) 
+// ตั้งค่า NTP servers และเขตเวลา
+const char* ntp_server1 = "pool.ntp.org";
+const char* ntp_server2 = "time.google.com";
+const char* ntp_server3 = "time.nist.gov";
+const int gmtOffset_sec = 7 * 3600;  // GMT+7
+const int daylightOffset_sec = 0; 
+
+เพื่อซิงโครไนซ์เวลาที่ถูกต้องจากเซิร์ฟเวอร์ NTP และใช้เวลานี้ในการประทับเวลา (timestamp) บนข้อมูลที่ส่งผ่าน MQTT ไปยัง Kafka
+
+โดยใช้ไลบรารี ESPNtpClient ซึ่งช่วยให้การตั้งค่าและรับเวลา NTP จากเซิร์ฟเวอร์ (ใช้เซิร์ฟเวอร์ NTP ของเราเอง "172.16.46.111")
+
+เวลาและวันที่ที่ได้รับจากเซิร์ฟเวอร์ NTP จะถูกบันทึกลงใน JSON payload ซึ่งจะใช้เป็น timestamp ของข้อมูลเซ็นเซอร์
+
+
 
 ## ตั้งค่าสี แสดงสถานะ
 ภายใน Board Cucumber ที่ GPIO_18 จะติดตั้ง RGB LED WS2812B ซึ่งเราจะใช่ในการแสดงสี เพื่อบอกสถานนะการทำงานของ board โดยใช้ Adafruit_NeoPixel ในการควบคุมการเปลี่ยนสี
@@ -86,11 +102,11 @@ const char* ssid = "TP-Link_CA30";
 const char* password = "29451760";
 
 // MQTT Configuration
-const char* mqtt_server = "172.16.46.88";  // MQTT Broker IP Address
+const char* mqtt_server = "172.16.46.111";  // MQTT Broker IP Address
 const int mqtt_port = 1883;
 const char* mqtt_topic = "iot-frames";
-const char* mqtt_user = "iot-may5";  // Username 
-const char* mqtt_password = "1234";  //  Password 
+const char* mqtt_user = "aimpree3";  // Username 
+const char* mqtt_password = "aimpree";  //  Password 
 
 
 IPAddress local_IP(172, 16, 46, 112);

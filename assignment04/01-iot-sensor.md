@@ -77,7 +77,9 @@ const int daylightOffset_sec = 0;
 
 ## flow chart
 
-![iot](https://github.com/user-attachments/assets/fe68f4ad-bd7d-44ec-8e4d-92e78007baa3)
+[iot2.drawio.pdf](https://github.com/user-attachments/files/17040646/iot2.drawio.pdf)
+
+
 
 
 

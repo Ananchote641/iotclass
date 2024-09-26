@@ -2,9 +2,8 @@
 
 ## Architecture Overview
 
-![IoT Event Streaming Architecture](https://miro.medium.com/v2/resize:fit:2000/format:webp/1*IUaBLlbVKgmsjbjqzew0ZQ.png)
 
-
+![AnyConv com__2](https://github.com/user-attachments/assets/503923ee-0cdb-4901-ab9f-79062bb9ef98)
 
 
 

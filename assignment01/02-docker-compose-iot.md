@@ -16,6 +16,10 @@ start_3iot_sensor.sh
 ```
 ทำการรันหน้าจอแต่ละตัว
 sh start_0zookeeper_kafka.sh
+sh start_1kafka_service.sh
+sh start_2iot_processor.sh
+sh start_3iot_sensor.sh
+![Screenshot 2024-10-16 154633](https://github.com/user-attachments/assets/2cb123de-9d31-4b8d-bdf6-07be2f31bc87)
 
 
 ## Error we found

@@ -4,6 +4,7 @@
 ## How to start docker compose
 
 ขั้นตอนแรก cd เข้า folder iot
+![4](https://github.com/user-attachments/assets/2e4d3964-7cc1-4db3-bf9c-bf348d82a720)
 run 4 หน้าจอ
 ```bash
 CD/iot
@@ -13,37 +14,38 @@ start_1kafka_service.sh
 start_2iot_processor.sh
 start_3iot_sensor.sh
 ```
+ทำการรันหน้าจอแต่ละตัว
+sh start_0zookeeper_kafka.sh
+
 
 ## Error we found
-
+Kafka ไม่ทำงาน
 
 ## How to solve the problems.
+ใช้คำสั่ง docker compose restart kafka
+ใช้คำสั่ง docker compose logs -f | egrep 'WARN|ERR' เพื่อดู logs จาก Docker Compose ที่มีข้อความ "WARN" หรือ "ERR"
 
 
-## Output
-
-- [ ] IoT Sensor - Dashboards - Grafana 
-- [ ] UI for Apache Ka
-- [ ] Mongo Expr
-- [ ] Node Expor
-- [ ] Prometheus Time Series Collection and Processing Ser
-- [ ] Prometheus Pushgateway
-- [ ] ZooNavigator
 
 
-### IoT Sensor - Dashboards - Grafana URL
 
-### UI for Apache Kafka
+### IoT Sensor 
+ประมวลผลข้อมูลจากเซนเซอร์ IoT
+
+### Apache Kafka
+แพลตฟอร์มสตรีมมิ่งแบบกระจายสำหรับสร้างท่อข้อมูลและแอปพลิเคชันสตรีมมิ่งแบบเรียลไทม์
 
 ### Mongo Express
-
-### Node Exporter
+ฐานข้อมูล NoSQL ที่จัดเก็บข้อมูลในรูปแบบเอกสาร
 
 ### Prometheus Time Series Collection and Processing Server
+ระบบสำหรับรวบรวมเมตริกในฐานข้อมูลแบบ time-series และแจ้งเตือนตามการเปลี่ยนแปลงของเมตริก
 
-### Prometheus Pushgateway
+### Mosquitto (MQTT Broker)
+โบรกเกอร์ MQTT แบบโอเพ่นซอร์สที่รองรับการสื่อสารแบบ publish/subscribe เหมาะสำหรับอุปกรณ์ IoT
 
-### ZooNavigator
+### Grafana
+แพลตฟอร์มการแสดงข้อมูลสำหรับสร้างแดชบอร์ดเพื่อตรวจสอบและแสดงข้อมูลแบบเรียลไทม์
 
 
 

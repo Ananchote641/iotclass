@@ -37,6 +37,15 @@ When the installation is completed select “Reboot Now” and press ENTER.
 
 
 ## How to install Docker
+
+
+เข้าสู่ระบบ: เข้าสู่ระบบ Dell Server ด้วยชื่อผู้ใช้
+
+
+ตรวจสอบการเชื่อมต่ออินเทอร์เน็ต:** ใช้คำสั่ง `sudo apt update` เพื่อตรวจสอบการเชื่อมต่ออินเทอร์เน็ต หากยังไม่ได้เชื่อมต่อ ให้ตั้งค่าอินเทอร์เน็ตแบบบริดจ์ 
+
+
+ใช้คำสั่งต่อไปนี้เพื่อติดตั้ง Docker
 ```bash
 # Add Docker's official GPG key:
 sudo apt-get update
@@ -58,10 +67,21 @@ sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
 
+ทดสอบ ว่าเราได้ลง docker แล้ว
 ```bash
 # Verify that the Docker Engine installation is successful by running the hello-world image
 sudo docker run hello-world
 ```
+
+ ติดตั้งเครื่องมือที่จำเป็นด้วยคำสั่ง
+
+ 
+    ```bash
+    sudo apt update
+    sudo apt upgrade
+    sudo apt-get install net-tools
+    sudo apt-get install vim
+    ```
 
 
 

@@ -32,6 +32,8 @@ Step 11: Finish Installation
 When the installation is completed select “Reboot Now” and press ENTER.
 
 
+โหลดไฟล์ Ubuntu Server ISO จากเว็บ Ubuntu แล้วใช้ Etcher สร้าง USB Bootable จากนั้นบูตเครื่องจาก USB แล้วตั้งค่าภาษาและคีย์บอร์ด เลือกแป้นพิมพ์ที่ใช้ กด “Done” แล้วเลือกติดตั้ง Ubuntu Server เป็นระบบหลัก ตั้งค่าเครือข่ายและเลือกให้ระบบใช้พื้นที่ทั้งดิสก์ หลังจากนั้นตั้งค่าข้อมูลผู้ใช้ ติ๊ก “Install OpenSSH Server” เพื่อเปิดให้เข้าถึงผ่าน SSH เมื่อติดตั้งเสร็จแล้วรีบูตเครื่อง
+
 
 
 ## How to install Docker

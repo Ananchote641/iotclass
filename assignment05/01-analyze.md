@@ -16,7 +16,7 @@ iot-processor มีตัวประมวลผลสามตัวได้
 3. MetricsTimeSeriesProcessor
 
 
-```pythone
+```python
 @Configuration
 @EnableKafka
 @EnableKafkaStreams

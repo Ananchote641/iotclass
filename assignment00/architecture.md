@@ -3,7 +3,7 @@
 ## Architecture Overview
 
 
-![AnyConv com__2](https://github.com/user-attachments/assets/503923ee-0cdb-4901-ab9f-79062bb9ef98)
+![iot](https://github.com/user-attachments/assets/7287feb6-9dc3-43a9-bdea-e8c8462eeee0)
 
 
 
